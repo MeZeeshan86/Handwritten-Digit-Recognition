@@ -11,7 +11,7 @@ from model import CNN
 st.set_page_config(page_title="Hand-Written Digit Recognizer",layout="centered")
 
 model=CNN()
-model.load_state_dict(torch.load("../model/mnist_cnn.pth", map_location="cpu"))
+model.load_state_dict(torch.load("model/mnist_cnn.pth", map_location="cpu"))
 model.eval()
 
 st.markdown("""
