@@ -26,15 +26,17 @@ Hand-Written-Digit/
 
 ## How to Run
 
-### Step 1: Install dependencies
+###  Install dependencies
 ```bash
 pip install -r requirements.txt
-
-## Run 
+```
+### Run 
+```bash
 streamlit run app.py
+```
 
 ## Model Details
-
 CNN with convolution + pooling layers
 Trained on MNIST dataset
 Live prediction
+
