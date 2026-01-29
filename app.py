@@ -3,8 +3,10 @@ import numpy as np
 import torch
 from PIL import Image,ImageOps
 from streamlit_drawable_canvas import st_canvas
-from model import CNN
 import pandas as pd
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+from model import CNN
 
 st.set_page_config(page_title="Hand-Written Digit Recognizer",layout="centered")
 
