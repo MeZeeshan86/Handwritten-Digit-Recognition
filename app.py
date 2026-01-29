@@ -93,19 +93,3 @@ else:
     pred_box.info("Draw a digit")
     chart_box.empty()
 
-if __name__ == "__main__":
-    import os
-    import streamlit.web.bootstrap as bootstrap
-
-    port = int(os.environ.get("PORT", 8501))
-
-    bootstrap.run(
-        "app.py",
-        "",
-        [],
-        flag_options={
-            "server.port": port,
-            "server.address": "0.0.0.0",
-            "server.headless": True,
-        },
-    )
